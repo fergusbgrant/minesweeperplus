@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block main %}
+    <div class="container py-3 text-center">
+        <div class="row justify-content-center pb-3">
+            <div class="col-12">
+                <h3>instructions</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-3">
+            <div class="col-6">
+                <p>
+                    for the most part, minesweeper+ is played in the same way as classic minesweeper. 
+                    however, in order to offset the occurrence of logical impasses and subsequent 
+                    gambles during the game, a new mechanic has been added to gameplay.
+                </p>
+                <p>
+                    minesweeper+ has a 'reveal' mode to assist the player when they encounter such
+                    impasses. with this mode, the player has a number of times (difficulty dependent)
+                    in each game that they can skip a 50/50 gamble by revealing what is under two
+                    adjacent tiles.
+                </p>
+                <p>
+                    to toggle reveal mode, press the space bar during gameplay; the background colour
+                    of the page's reveal count will change back and forth to show that the mode has 
+                    switched. once reveal mode is engaged, click on any tile, and that tile and its
+                    adjacent tiles will be highlighted in pink. After this, click on the adjacent tile
+                    you wish to reveal along with the tile that was initially clicked; both will be 
+                    revealed, and the game will return to normal mode.
+                </p>
+                <p>
+                    if, after engaging reveal mode, you click on the wrong tile, you can simply hit the
+                    space bar again to clear your selection and exit reveal mode.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
