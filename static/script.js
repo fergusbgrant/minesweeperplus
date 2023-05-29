@@ -526,7 +526,9 @@ function win(board) {
     clearInterval(interval);
 
     // Update score form with time value
-    document.getElementById('time').setAttribute('value', (seconds - 1));
+    setInterval(function() {
+        document.getElementById('time').setAttribute('value', (seconds - 1));
+    }, 5);
 
     // Place flags on unmarked bombs
     for (let i = 0; i < board.length; i++)
