@@ -152,3 +152,7 @@ def submit_score(request, difficulty_id):
     # Close database connection
     db.close()
     connection.close()
+
+
+def create_app():
+    return app
